@@ -17,8 +17,6 @@ spec:
     parameters:
       - name: image.tag
         value: main
-      - name: storageclass
-        value: {{ .Values.cats.storageClass }}
  destination:
   server: 'https://kubernetes.default.svc'
   namespace: cats

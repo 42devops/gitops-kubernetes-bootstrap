@@ -1,14 +1,8 @@
 ## gitops-cluster-bootstrap
 
-This is an app-of-apps style start up repository for ArgoCD.
-
-The goal is to setup a production like set of workloads ( observability, security and example applications ).
-
 _See the video here_
 
 <a href="https://youtu.be/GAu1INNeE7E">
-<img src="images/yt.png" width="600px;">
-</a>
 
 ## Workloads
 
@@ -20,13 +14,6 @@ When looking at the wider business context, we see how the applications in this 
 ### bootstrap
 
 This folder contains application templates. You can either add a helm chart or git repository as the source. You can copy an existing application or import some you've written before for argocd.
-
-
-#### bootstrap-resources
-
-This folder contains the resources that are used by the bootstrap application. Such things might be application specific resources like network policies, ingress settings or service accounts. The idea is that this folder is continuously and automatically synced with the cluster. **It helps to get around the problem of having to make a another gitOps repo just for settings of an app.**
-
-<img src="images/4.png" width="1000px;">
 
 
 ### Default applications

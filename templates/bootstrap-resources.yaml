@@ -10,14 +10,12 @@ spec:
   project: default
   source:
     path: bootstrap-resources
-    repoURL: https://github.com/cloud-native-skunkworks/gitops-kubernetes-bootstrap
+    repoURL: https://github.com/42devops/gitops-kubernetes-bootstrap
     targetRevision: HEAD
     helm:
       parameters:
         - name: domain
           value: {{ .Values.domain }}
-        - name: metallb.addresspool
-          value: {{ .Values.metallb.addresspool }}
   syncPolicy:
     automated:
       selfHeal: true
