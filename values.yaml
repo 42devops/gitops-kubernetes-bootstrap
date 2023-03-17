@@ -1,16 +1,13 @@
 # Global
 ## Set the domain to create nginx for argocd and other service ingress
-domain:
+domain: gitops42.duckdns.org
 # Application specific
-githubactionsrunner:
-  enable: false
-  token: ''
 cats:
 observability:
   pdkey:
   storageSize: 10Gi
   retention: 5d
 trivy:
-  enable: true
+  enable: false
 logging:
   enable: true
