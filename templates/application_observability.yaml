@@ -15,9 +15,6 @@ spec:
     helm:
       skipCrds: true
       values: |
-        prometheus:
-          prometheusSpec:
-            retention: {{ .Values.observability.retention }}
         grafana:
           service:
             type: ClusterIP
