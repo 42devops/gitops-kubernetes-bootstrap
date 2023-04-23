@@ -3,11 +3,6 @@
 domain: gitops42.duckdns.org
 # Application specific
 cats:
-observability:
-  pdkey:
-  storageSize: 10Gi
-  retention: 5d
-trivy:
-  enable: false
+  enable: true
 logging:
   enable: true

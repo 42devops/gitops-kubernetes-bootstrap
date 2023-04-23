@@ -5,8 +5,7 @@ metadata:
   name: ingress-grafana
   namespace: observability
   annotations:
-    kubernetes.io/ingress.class: "nginx" 
-    cert-manager.io/issuer: "letsencrypt-ci"
+    kubernetes.io/ingress.class: "nginx"
 spec:
   tls:
   - hosts:
@@ -30,8 +29,7 @@ metadata:
   name: ingress-argocd
   namespace: argocd
   annotations:
-    kubernetes.io/ingress.class: "nginx" 
-    cert-manager.io/issuer: "letsencrypt-ci"
+    kubernetes.io/ingress.class: "nginx"
 spec:
   tls:
   - hosts:
@@ -46,6 +44,6 @@ spec:
         backend:
           service:
             name: argocd-server
-            port: 
+            port:
                 number: 80
 {{- end }}
